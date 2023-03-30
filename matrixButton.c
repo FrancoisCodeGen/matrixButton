@@ -6,7 +6,6 @@
 #include <wiringPi.h>
 #include "matrixButton.h"
 #include "check.h"
-#include "softTone.h"
 
 
 /* 

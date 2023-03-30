@@ -6,7 +6,7 @@
 #include "softTone.h"
 
 #define BUZZER      1
-#define N_SCALE           2
+#define N_SCALE     2
 
 
 void playNote(int idButton);
@@ -41,7 +41,8 @@ void playNote(int idButton)
     etat = !etat;
 
     if (etat)
-    {
+    {   
+        //Création d'une PWM avec une fréquence pour réaliser la note
         softToneWrite(BUZZER, scale[idButton-1]);
     }
     else
